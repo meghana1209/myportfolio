@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeef7; /* Soft baby pink */
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Floating Flower Animation */
+@keyframes floatFlowers {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://i.imgur.com/evMC34N.png'); /* Flower icon */
+    background-size: cover;
+    opacity: 0.5;
+    animation: floatFlowers 3s infinite alternate ease-in-out;
+}
+
+/* Flowers Placement */
+.flower1 { top: 10%; left: 5%; animation-duration: 4s; }
+.flower2 { top: 30%; right: 10%; animation-duration: 5s; }
+.flower3 { bottom: 20%; left: 20%; animation-duration: 6s; }
+.flower4 { bottom: 5%; right: 30%; animation-duration: 7s; }
+
+/* Header */
+header {
+    background: #ff85a2; /* Brighter Pink */
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 1.5em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Home Page - Data Analytics Theme */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffb3c6; /* Baby Pink */
+    color: white;
+    font-size: 2em;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
+    background: #ff6384;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff4d73;
+    transform: scale(1.05);
+}
+
+/* Sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease-in-out forwards;
+}
+
+/* Headings */
+h2 {
+    color: #ff85a2;
+    font-size: 2em;
+    border-bottom: 3px solid #ff85a2;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Project Section */
+.project {
+    background: #ffd6e0; /* Lightest Pink */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Skills List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffccd5; /* Soft Pink */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    background: #ff85a2; /* Brighter Pink */
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff6384;
+    color: white;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
